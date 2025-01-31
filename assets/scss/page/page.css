@@ -76,11 +76,8 @@
 }
 
 .section3 {
-  padding-bottom: 50px;
+  padding-bottom: 160px;
   overflow: hidden;
-}
-.section3 .container {
-  height: 100vh;
 }
 .section3 .link-btn {
   text-align: right;
@@ -390,6 +387,7 @@
   height: 416px;
   background-image: url(../../assets/images/bg-section5.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   bottom: 0;
   left: 50%;
