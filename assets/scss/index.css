@@ -853,7 +853,9 @@ footer img {
 }
 
 .section5 .container {
+  height: 100vh;
   position: relative;
+  padding: 100px 0;
 }
 .section5 .bg-wrap {
   width: 100%;
@@ -873,6 +875,7 @@ footer img {
   align-items: center;
   justify-content: center;
   margin-top: 160px;
+  position: relative;
 }
 .section5 .box {
   width: 50%;
