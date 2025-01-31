@@ -1,7 +1,8 @@
 .section5 {
   .container {
-    //height: 100vh;
+    height: 100vh;
     position: relative;
+    padding: 100px 0;
   }
   .bg-wrap {
     width: 100%;
@@ -21,6 +22,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 160px;
+    position: relative;
   }
   .box {
     width: 50%;
