@@ -126,7 +126,7 @@
         width: 40px;
         height: 40px;
         display: block;
-        background-image: url(../../../assets/images/icon-pagination.png);
+        background-image: url(../../assets/images/icon-pagination.png);
         background-size: 40px 40px;
         background-position: top;
         position: absolute;
@@ -149,7 +149,7 @@
   }
   &.on {
     img {
-      content: url(../../../assets/images/section03-swiper-start.png);
+      content: url(../../assets/images/section03-swiper-start.png);
     }
   }
 }
