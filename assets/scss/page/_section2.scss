@@ -1,0 +1,22 @@
+.section2 {
+  .flex {
+    height: 50vh;
+    text-align: center;
+    flex-direction: column;
+  }
+  p {
+    line-height: 100px;
+    &:first-child {
+      font-family: Baskerville;
+      font-size: 40px;
+    }
+    &:last-child {
+      font-size: 24px;
+    }
+  }
+  h3 {
+    font-size: 85px;
+    font-weight: bold;
+    line-height: 120px;
+  }
+}

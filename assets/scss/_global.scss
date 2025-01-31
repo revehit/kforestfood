@@ -1,0 +1,74 @@
+@import "./components/components.scss";
+@import "./page/page.scss";
+
+body {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* common style */
+.section {
+  overflow: hidden;
+}
+.relative {
+  position: relative;
+}
+.blind {
+  position: absolute;
+  left: -99999px;
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-indent: -99999px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.flex {
+  display: flex;
+  &.align-center {
+    align-items: center;
+  }
+  &.align-start {
+    align-items: flex-start;
+  }
+  &.align-ent {
+    align-items: flex-end;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.justify-start {
+    justify-content: start;
+  }
+  &.justify-space-between {
+    justify-content: space-between;
+  }
+}
+
+/* text */
+.text-bold {
+  font-weight: bold;
+}
+
+/* color */
+.point {
+  color: var(--color-point);
+}
+
+/* title */
+h3.title {
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+  & + .sub-title {
+    margin-top: 20px;
+  }
+}
+.sub-title {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}

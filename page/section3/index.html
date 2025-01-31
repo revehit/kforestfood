@@ -1,0 +1,181 @@
+<div class="container">
+  <div data-aos="fade-up" data-aos-duration="1000">
+    <h3 class="title">대표임산물</h3>
+    <p class="sub-title">청정숲에서 자란 고품질 임산물의 가치를 전합니다.</p>
+    <a href="javascript:;" class="link-btn">View all</a>
+  </div>
+
+  <div
+    data-aos="fade-left"
+    data-aos-delay="500"
+    data-aos-duration="1000"
+    class="section03-swiper"
+  >
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        <span class="section03-swiper01"></span>
+        <a href="javascript:;" class="section03-swiper__card-wrap">
+          <div
+            class="section03-swiper__card"
+            style="
+              background-image: url(../../assets/images/products01_09_img1.jpg);
+            "
+          >
+            <h3>복분자</h3>
+            <h3>Bokbunja</h3>
+          </div>
+          <h3>탈모를 방지하는 <strong>복분자</strong></h3>
+        </a>
+      </li>
+      <li class="swiper-slide">
+        <span class="section03-swiper02"></span>
+        <a href="javascript:;" class="section03-swiper__card-wrap">
+          <div
+            class="section03-swiper__card"
+            style="
+              background-image: url(../../assets/images/products01_01_img4.jpg);
+            "
+          >
+            <h3>밤</h3>
+            <h3>Chestnut</h3>
+          </div>
+          <h3>면역력 높이는 <strong>밤</strong></h3>
+        </a>
+      </li>
+      <li class="swiper-slide">
+        <span class="section03-swiper03"></span>
+        <a href="javascript:;" class="section03-swiper__card-wrap">
+          <div
+            class="section03-swiper__card"
+            style="
+              background-image: url(../../assets/images/products01_03_img1.jpg);
+            "
+          >
+            <h3>떫은감</h3>
+            <h3>Persimmon</h3>
+          </div>
+          <h3>노화를 늦추는 <strong>떫은감</strong></h3>
+        </a>
+      </li>
+      <li class="swiper-slide">
+        <span class="section03-swiper01"></span>
+        <a href="javascript:;" class="section03-swiper__card-wrap">
+          <div
+            class="section03-swiper__card"
+            style="
+              background-image: url(../../assets/images/products01_09_img1.jpg);
+            "
+          >
+            <h3>복분자</h3>
+            <h3>Bokbunja</h3>
+          </div>
+          <h3>탈모를 방지하는 <strong>복분자</strong></h3>
+        </a>
+      </li>
+      <li class="swiper-slide">
+        <span class="section03-swiper02"></span>
+        <a href="javascript:;" class="section03-swiper__card-wrap">
+          <div
+            class="section03-swiper__card"
+            style="
+              background-image: url(../../assets/images/products01_01_img4.jpg);
+            "
+          >
+            <h3>밤</h3>
+            <h3>Chestnut</h3>
+          </div>
+          <h3>면역력 높이는 <strong>밤</strong></h3>
+        </a>
+      </li>
+      <li class="swiper-slide">
+        <span class="section03-swiper03"></span>
+        <a href="javascript:;" class="section03-swiper__card-wrap">
+          <div
+            class="section03-swiper__card"
+            style="
+              background-image: url(../../assets/images/products01_03_img1.jpg);
+            "
+          >
+            <h3>떫은감</h3>
+            <h3>Persimmon</h3>
+          </div>
+          <h3>노화를 늦추는 <strong>떫은감</strong></h3>
+        </a>
+      </li>
+    </ul>
+    <div class="section03-swiper__con-bottom">
+      <button class="section02-swiper-prev">
+        <img
+          src="https://www.osangtech.co.kr/draft/INSS/B안/images/section02-swiper-prev.png"
+          alt=""
+        />
+      </button>
+      <div class="section03-pagination"></div>
+      <button class="section03-swiper-next">
+        <img
+          src="https://www.osangtech.co.kr/draft/INSS/B안/images/section02-swiper-next.png"
+          alt=""
+        />
+      </button>
+      <button class="section03-swiper-stop">
+        <img src="../../assets/images/section03-swiper-stop.png" alt="" />
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+
+  // swiper
+  $(function () {
+    var section03_swiper = new Swiper(".section03-swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 60,
+      speed: 1000,
+      loop: true,
+      pagination: {
+        el: ".section03-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".section03-swiper-next",
+        prevEl: ".section03-swiper-prev",
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      on: {
+        slideChange: function () {
+          setTimeout(() => {
+            var classname = $(
+              ".section03-swiper .swiper-slide-next > span"
+            ).attr("class");
+
+            if (classname) {
+              $(".section03-swiper02 li").removeClass("on");
+              $(".section03-swiper02")
+                .find("." + classname.trim())
+                .addClass("on");
+            }
+          }, 100);
+        },
+      },
+    });
+    var sw = 0;
+    $(".section03-swiper-stop").click(function () {
+      if (sw == 0) {
+        $(".section03-swiper-stop").addClass("on");
+        section03_swiper.autoplay.stop();
+        sw = 1;
+      } else {
+        $(".section03-swiper-stop").removeClass("on");
+        section03_swiper.autoplay.start();
+        sw = 0;
+      }
+    });
+
+    //section03_swiper.controller.control = section03_swiper_pagination;
+  });
+</script>

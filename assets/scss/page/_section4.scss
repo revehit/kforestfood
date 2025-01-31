@@ -1,0 +1,131 @@
+.section4 {
+  overflow: hidden;
+  position: relative;
+  .container {
+    height: 100vh;
+  }
+  .sec4__btn {
+    margin-left: auto;
+  }
+  .link-btn {
+    text-align: right;
+    text-decoration: underline;
+    display: block;
+    margin-left: 50px;
+  }
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    width: 400px;
+
+    .text {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    .img-box {
+      width: 400px;
+      //height: 250px;
+      height: 200px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      //border: 7px solid transparent;
+      border-radius: 20px;
+      box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &:hover {
+      .img-box {
+        border: 7px solid #3290ff;
+      }
+    }
+  }
+
+  svg {
+    position: absolute;
+    bottom: 0;
+    //border: 1px solid #111;
+    width: 100%;
+  }
+  textPath {
+    font-size: 80px;
+    font-family: althelas;
+    font-weight: bold;
+    //fill: #388049;
+    fill: #fff;
+  }
+}
+
+.sec4Swiper {
+  display: flex;
+  position: relative;
+  //height: 480px;
+  height: 360px;
+  margin-top: 40px;
+  padding-left: 170px;
+}
+.sec4Swiper__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1031px;
+  //background-color: #fff7e2;
+  background-image: url(../../../assets/images/bg-section4.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.sec4Swiper .swiper-wrapper {
+  align-items: center;
+}
+
+.arrow {
+  width: 56px;
+  height: 56px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+  background-color: var(--color-white);
+}
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.arrow::before {
+  width: 20%;
+  height: 20%;
+  border: 2px solid #000;
+  border-right: 0;
+  border-bottom: 0;
+}
+.arrow::after {
+  width: 16px;
+  height: 2px;
+  background-color: #000;
+  transform-origin: 0 100%;
+  transform: rotate(45deg);
+}
+
+.arrow-btn {
+  position: absolute;
+  bottom: -125px;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}
+.arrow--left {
+  transform: rotate(-45deg);
+}
+.arrow--right {
+  margin-left: 10px;
+  transform: rotate(135deg);
+}

@@ -1,0 +1,95 @@
+<div class="container">
+  <div>
+    <h3 class="title">함께하는 브랜드</h3>
+    <p class="sub-title">청정한 숲푸드를 만들고자 함께하는 업체를 소개합니다</p>
+    <a href="javascript:;" class="link-btn">View all</a>
+  </div>
+
+  <div class="service-conts-wrap service-items">
+    <div class="conts-box ty-1 service-items-box">
+      <div class="head">
+        <span>공지사항</span>
+        <b>
+          K-FOREST FOOD <br />
+          WEEK SNS 공유 이벤트
+        </b>
+      </div>
+      <div class="img-box">
+        <img src="../../assets/images/img-section6-1.png" />
+      </div>
+      <a href=""></a>
+    </div>
+    <div class="conts-box ty-2 service-items-box">
+      <div class="head">
+        <span>교욱/행사</span>
+        <b>설 맞이 청정임산물 <br />‘숲푸드 기획전’ 개최</b>
+      </div>
+      <div class="img-box">
+        <img src="../../assets/images/img-section6-3.png" />
+      </div>
+      <a href="/business/catering.php"></a>
+    </div>
+    <div class="conts-box ty-3 service-items-box">
+      <div class="head">
+        <span>알림/홍보</span>
+
+        <b>올 여름 건강을 책임질<br />보양 임산물은?</b>
+      </div>
+      <div class="img-box">
+        <img src="../../assets/images/img-section6-2.png" />
+      </div>
+      <a href="/business/franchise.php"></a>
+    </div>
+
+    <div class="conts-box ty-1 service-items-box">
+      <div class="head">
+        <span>공지사항</span>
+        <b>
+          K-FOREST FOOD <br />
+          WEEK SNS 공유 이벤트
+        </b>
+      </div>
+      <div class="img-box">
+        <img src="../../assets/images/img-section6-1.png" />
+      </div>
+      <a href=""></a>
+    </div>
+    <div class="conts-box ty-2 service-items-box">
+      <div class="head">
+        <span>교욱/행사</span>
+        <b>설 맞이 청정임산물 <br />‘숲푸드 기획전’ 개최</b>
+      </div>
+      <div class="img-box">
+        <img src="../../assets/images/img-section6-3.png" />
+      </div>
+      <a href="/business/catering.php"></a>
+    </div>
+    <div class="conts-box ty-3 service-items-box">
+      <div class="head">
+        <span>알림/홍보</span>
+
+        <b>올 여름 건강을 책임질<br />보양 임산물은?</b>
+      </div>
+      <div class="img-box">
+        <img src="../../assets/images/img-section6-2.png" />
+      </div>
+      <a href="/business/franchise.php"></a>
+    </div>
+  </div>
+</div>
+<img class="link-wrap" src="../../assets/images/img-linkwrap.png" alt="" />
+
+<script>
+  const serviceItem = document.getElementsByClassName("service-items");
+
+  gsap.to(serviceItem, {
+    scrollTrigger: {
+      trigger: "#section6",
+      scrub: 1,
+      start: "top top",
+      pin: true,
+    },
+    xPercent: -100 * (serviceItem.length + 1),
+    ease: "none",
+  });
+</script>

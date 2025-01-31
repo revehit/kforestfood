@@ -1,0 +1,87 @@
+<script>
+  const se5Bg = document.getElementsByClassName("bg-wrap");
+
+  gsap.set(se5Bg, {
+    width: "100%",
+    borderRadius: "0",
+  });
+
+  // 스크롤 트리거 애니메이션
+  gsap.to("#section5 .bg-wrap", {
+    scrollTrigger: {
+      trigger: "#section5 .bg-wrap",
+      start: "top center",
+      end: "bottom center",
+      scrub: 1,
+    },
+    width: "90%",
+    borderRadius: "20px",
+    stagger: 0.1,
+    duration: 1,
+  });
+</script>
+
+<div class="container fluid">
+  <div>
+    <h3 class="title">참여안내</h3>
+    <p class="sub-title">
+      청정한 숲푸드를 만들고자 함께 하는 업체를 소개합니다.
+    </p>
+  </div>
+
+  <div class="bg-wrap"></div>
+  <div class="box-wrap">
+    <div class="box">
+      <p>신청방법·절차</p>
+      <p>참여자격요견 / 숲푸드<br />신청 및 승인절차 소개합니다.</p>
+      <a class="button-expand button-expand-light" href="">
+        <span>자세히 보기</span>
+        <div class="circle">
+          자세히 보기
+          <svg
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
+            ></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+    <div class="box">
+      <p>참여혜택</p>
+      <p>3가지 혜택을<br />한 눈에 보여드립니다.</p>
+      <a class="button-expand button-expand-light" href="">
+        <span>자세히 보기</span>
+        <div class="circle">
+          자세히 보기
+          <svg
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
+            ></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

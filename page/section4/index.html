@@ -1,0 +1,108 @@
+<div
+  data-aos="fade-right"
+  data-aos-duration="2000"
+  class="sec4Swiper__bg"
+></div>
+<div class="container">
+  <div data-aos="fade-up" data-aos-duration="1000">
+    <h3 class="title">미디어룸</h3>
+    <p class="sub-title">청정임산물과 함께 식탁 위에 작은 숲을 만듭니다.</p>
+    <div class="flex align-center">
+      <img src="../../assets/images/img-sns.png" alt="" />
+      <div class="sec4__btn">
+        <button type="button" class="prev arrow arrow--left"></button>
+        <button type="button" class="next arrow arrow--right"></button>
+      </div>
+      <a href="javascript:;" class="link-btn">View all</a>
+    </div>
+  </div>
+
+  <div class="sec4Swiper" data-aos="fade-left" data-aos-duration="1000">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="javascrtipt:;">
+          <div class="img-box">
+            <img src="../../assets/images/img-section4-1.png" alt="" />
+          </div>
+          <div class="text">
+            K-FOREST FOOD <br />숲의 생명력을 담은 청정 먹거리
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascrtipt:;">
+          <div class="img-box">
+            <img src="../../assets/images/img-section4-2.jpeg" alt="" />
+          </div>
+          <div class="text">
+            아직도 아무거나 먹니? <br />건강한 나를 위한 선택 K-FOREST FOOD
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascrtipt:;">
+          <div class="img-box">
+            <img src="../../assets/images/img-section4-3.jpeg" alt="" />
+          </div>
+          <div class="text">셰프님 요리해주세요!</div>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascrtipt:;">
+          <div class="img-box">
+            <img src="../../assets/images/img-section4-4.jpeg" alt="" />
+          </div>
+          <div class="text">240601 K FORSTFOOD 브랜드관</div>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascrtipt:;">
+          <div class="img-box">
+            <img src="../../assets/images/img-section4-5.jpeg" alt="" />
+          </div>
+          <div class="text">2023 K-FORESTFOOD 홍보 영상</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<svg id="textSVG" viewBox="0 0 1000 200">
+  <path
+    fill="none"
+    id="curve"
+    d="M0,100S269.931,186.612,520,100C770.069,13.388,1100,100,1100,100"
+  />
+  <text x="-10" font-size="45">
+    <textPath id="text" xlink:href="#curve" startOffset="1200">
+      LITTLE FOREST ON YOUR TABLE
+    </textPath>
+  </text>
+</svg>
+
+<script>
+  var section04_slide = new Swiper(".sec4Swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 70,
+    autoplay: true,
+    loop: true,
+    navigation: {
+      nextEl: ".sec4__btn .next",
+      prevEl: ".sec4__btn .prev",
+    },
+  });
+
+  $(function () {
+    gsap.to("#text", {
+      attr: {
+        startOffset: -2500,
+      },
+      scrollTrigger: {
+        trigger: ".sec4Swiper",
+        start: "top center",
+        //end: "20%",
+        scrub: 10,
+      },
+      duration: 1,
+    });
+  });
+</script>

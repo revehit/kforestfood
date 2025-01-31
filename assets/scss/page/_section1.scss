@@ -1,0 +1,58 @@
+.section1 {
+  margin-top: 150px;
+  .container {
+    height: 100vh;
+  }
+  .visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgbox {
+    width: 360px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .textbox {
+    width: 700px;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    .imgtxt1 {
+      width: 500px;
+      //height: 630px;
+      margin-left: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      //margin-top: 600px;
+      .star {
+        position: absolute;
+        bottom: -200px;
+        right: 10px;
+        top: auto;
+        left: auto;
+        transform: none;
+        animation: rotate360 2s linear infinite;
+      }
+    }
+    .imgtxt2 {
+      width: 600px;
+      margin-left: 140px;
+    }
+  }
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

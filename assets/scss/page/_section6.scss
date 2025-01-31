@@ -1,0 +1,112 @@
+.section6 {
+  .container {
+    height: 100vh;
+  }
+  .title {
+    margin-top: 160px;
+  }
+  .link-btn {
+    text-align: right;
+    text-decoration: underline;
+    display: block;
+  }
+  .link-wrap {
+    margin-top: -250px;
+  }
+}
+
+.service-conts-wrap {
+  display: flex;
+  gap: 32px;
+  margin-top: 40px;
+}
+.service-conts-wrap .conts-box {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 640px;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  transform: translateX(300px);
+  opacity: 0;
+  transition: all 0.5s linear;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.service-conts-wrap .conts-box .head {
+  width: 100%;
+  padding: 32px 40px 40px 40px;
+}
+.service-conts-wrap .conts-box .head > * {
+  display: block;
+}
+.service-conts-wrap .conts-box .head span {
+  font-size: 18px;
+  //color: #08483c;
+  font-weight: bold;
+}
+.service-conts-wrap .conts-box .head em {
+  margin-top: 16px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #08483c;
+}
+.service-conts-wrap .conts-box .head b {
+  margin-top: 16px;
+  font-size: 32px;
+  font-weight: 800;
+  //color: #08483c;
+}
+.service-conts-wrap .conts-box .head::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff url(../../../assets/images/arr_upright.svg) center no-repeat;
+  position: absolute;
+  right: 40px;
+  top: 32px;
+}
+.service-conts-wrap .conts-box .img-box {
+  width: 100%;
+  height: 280px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.service-conts-wrap .conts-box .img-box img {
+  display: block;
+  width: 100%;
+}
+.service-conts-wrap .conts-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.service-conts-wrap .conts-box.ty-1 {
+  background: #e6e9bf;
+}
+.service-conts-wrap .conts-box.ty-2 {
+  background: #ffdecc;
+}
+.service-conts-wrap .conts-box.ty-3 {
+  background: #f8e6c3;
+}
+
+.title-box {
+  opacity: 1;
+}
+.service-conts-wrap .conts-box {
+  transform: translateX(0);
+  opacity: 1;
+}
+.service-conts-wrap .conts-box.ty-1 {
+  transition-delay: 0.2s;
+}
+.service-conts-wrap .conts-box.ty-2 {
+  transition-delay: 0.4s;
+}
+.service-conts-wrap .conts-box.ty-3 {
+  transition-delay: 0.6s;
+}

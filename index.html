@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="식탁 위의 작은 숲. K-FOREST FOOD. 건강하고 균형잡힌 식탁을 되찾고 싶은 당신을 위해. 청정숲에서 자란 고품질의 임산물."
+    />
+    <meta
+      name="keywords"
+      content="K-forestfood, K-forest food, k포레스트푸드, k포레스트 푸드, k-포레스트푸드, k-포레스트 푸드, 케이포레스트푸드, 케이포레스트 푸드, kforestfood, k forest food"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="K-FOREST FOOD 식탁 위의 작은 숲" />
+    <meta
+      property="og:description"
+      content="식탁 위의 작은 숲. K-FOREST FOOD. 건강하고 균형잡힌 식탁을 되찾고 싶은 당신을 위해. 청정숲에서 자란 고품질의 임산물."
+    />
+    <title>K-FOREST FOOD 대표 임산물</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/scss/index.css" />
+
+    <!-- <script src="https://code.jquery.com/jquery-latest.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      $(function () {
+        $("#header").load("./components/header/index.html");
+        $("#section1").load("./page/section1/index.html");
+        $("#section2").load("./page/section2/index.html");
+        $("#section3").load("./page/section3/index.html");
+        $("#section4").load("./page/section4/index.html");
+        $("#section5").load("./page/section5/index.html");
+        $("#section6").load("./page/section6/index.html");
+        $("#footer").load("./components/footer/index.html");
+      });
+    </script>
+
+    <!-- <script>
+      $(document).ready(function () {
+        // 스크롤 이벤트 처리
+        $(window).on("scroll", function () {
+          var now = $(window).scrollTop();
+          var targets = [
+            $("#section1").offset().top - 112,
+            $("#section2").offset().top - 600,
+            $("#section3").offset().top - 600,
+            $("#section4").offset().top - 600,
+            $("#section5").offset().top - 600,
+            $("#section6").offset().top - 600,
+          ];
+
+          // 각 섹션에 대해 처리
+          $(".section").each(function (index) {
+            if (now > targets[index]) {
+              $(this).addClass("on");
+            } else {
+              $(this).removeClass("on");
+            }
+          });
+        });
+      });
+    </script> -->
+
+    <header id="header"></header>
+    <main id="contents">
+      <section id="section1" class="section section1"></section>
+      <section id="section2" class="section section2"></section>
+      <section id="section3" class="section section3"></section>
+      <section id="section4" class="section section4 section04"></section>
+      <section id="section5" class="section section5"></section>
+      <section id="section6" class="section section6"></section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

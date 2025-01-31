@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="header-inner">
+    <h1>
+      <a href="#">
+        <img src="../../assets/images/img-toplogo.png" alt="" />
+      </a>
+    </h1>
+    <nav>
+      <!-- <ul class="util-menu">
+        <li><a href="javascript:void(0)">K-FOREST FOOD</a></li>
+        <li><a href="javascript:void(0)">대표 임산물</a></li>
+        <li><a href="javascript:void(0)">함께하기</a></li>
+        <li><a href="javascript:void(0)">소식</a></li>
+        <li><a href="javascript:void(0)">문의</a></li>
+      </ul> -->
+      <button id="menu-btn" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <p class="blind">메뉴닫기</p>
+      </button>
+    </nav>
+  </div>
+</div>
+<!-- <div class="gnb-wrap">
+  <div class="container">
+    <ul>
+      <li>
+        <p>숲푸드 소개</p>
+        <div class="depth2">
+          <a href="javascript:void(0)">숲푸드란?</a>
+          <a href="javascript:void(0)">숲푸드, BI</a>
+        </div>
+      </li>
+      <li>
+        <p>대표 임산물</p>
+        <div class="depth2">
+          <a href="javascript:void(0)">대표 임산물</a>
+          <a href="javascript:void(0)">임산물 국가통합브랜드 적용 대상 품목</a>
+        </div>
+      </li>
+      <li>
+        <p>참여 안내</p>
+        <div class="depth2">
+          <a href="javascript:void(0)">신청방법</a>
+          <a href="javascript:void(0)">참여혜액</a>
+        </div>
+      </li>
+      <li>
+        <p>소식 안내</p>
+        <div class="depth2">
+          <a href="javascript:void(0)">공지사항</a>
+          <a href="javascript:void(0)">알림/홍보</a>
+          <a href="javascript:void(0)">미디어룸</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div> -->
+
+<!-- header addclass -->
+<script type="text/javascript">
+  function toggleMenuBtn() {
+    let state = menu_btn.dataset.state;
+    menu_btn.dataset.state =
+      !state || state === "hamburger" ? "x" : "hamburger";
+
+    // #header에 .on 클래스 추가/제거
+    if (menu_btn.dataset.state === "x") {
+      header.classList.add("on");
+    } else {
+      header.classList.remove("on");
+    }
+  }
+  let menu_btn = document.getElementById("menu-btn");
+  menu_btn.onclick = toggleMenuBtn;
+</script>
