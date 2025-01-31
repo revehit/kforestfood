@@ -90,17 +90,14 @@ html ::-webkit-scrollbar-button {
 
 body {
   color: var(--color-darken);
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
 }
 
 caption,
@@ -108,7 +105,7 @@ legend {
   border: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
+          clip-path: inset(50%);
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -205,10 +202,7 @@ select::-ms-expand {
   display: none;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
   -webkit-text-fill-color: #000 !important;
   box-shadow: 0 0 0px 1000px #fff inset !important;
 }
@@ -237,72 +231,63 @@ svg {
 @font-face {
   font-family: "Pretendard";
   font-style: normal;
-  src: url("fonts/Pretendard-Black.woff") format("woff"),
-    url("fonts/Pretendard-Black.woff2") format("woff2");
+  src: url("fonts/Pretendard-Black.woff") format("woff"), url("fonts/Pretendard-Black.woff2") format("woff2");
   font-weight: 900;
   font-display: swap;
 }
 @font-face {
   font-family: "Pretendard";
   font-style: normal;
-  src: url("fonts/Pretendard-Bold.woff") format("woff"),
-    url("fonts/Pretendard-Bold.woff2") format("woff2");
+  src: url("fonts/Pretendard-Bold.woff") format("woff"), url("fonts/Pretendard-Bold.woff2") format("woff2");
   font-weight: 800;
   font-display: swap;
 }
 @font-face {
   font-family: "Pretendard";
   font-style: normal;
-  src: url("fonts/Pretendard-ExtraBold.woff") format("woff"),
-    url("fonts/Pretendard-ExtraBold.woff2") format("woff2");
+  src: url("fonts/Pretendard-ExtraBold.woff") format("woff"), url("fonts/Pretendard-ExtraBold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Pretendard";
   font-style: normal;
-  src: url("fonts/Pretendard-ExtraLight.woff") format("woff"),
-    url("fonts/Pretendard-ExtraLight.woff2") format("woff2");
+  src: url("fonts/Pretendard-ExtraLight.woff") format("woff"), url("fonts/Pretendard-ExtraLight.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "Pretendard";
   font-style: normal;
-  src: url("fonts/Pretendard-Light.woff") format("woff"),
-    url("fonts/Pretendard-Light.woff2") format("woff2");
+  src: url("fonts/Pretendard-Light.woff") format("woff"), url("fonts/Pretendard-Light.woff2") format("woff2");
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "Pretendard";
   font-style: normal;
-  src: url("fonts/Pretendard-Medium.woff") format("woff"),
-    url("fonts/Pretendard-Medium.woff2") format("woff2");
+  src: url("fonts/Pretendard-Medium.woff") format("woff"), url("fonts/Pretendard-Medium.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Pretendard";
   font-style: normal;
-  src: url("fonts/Pretendard-Regular.woff") format("woff"),
-    url("fonts/Pretendard-Regular.woff2") format("woff2");
+  src: url("fonts/Pretendard-Regular.woff") format("woff"), url("fonts/Pretendard-Regular.woff2") format("woff2");
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "Pretendard";
   font-style: normal;
-  src: url("fonts/Pretendard-SemiBold.woff") format("woff"),
-    url("fonts/Pretendard-SemiBold.woff2") format("woff2");
+  src: url("fonts/Pretendard-SemiBold.woff") format("woff"), url("fonts/Pretendard-SemiBold.woff2") format("woff2");
   font-weight: 200;
   font-display: swap;
 }
 @font-face {
   font-family: "Pretendard";
   font-style: normal;
-  src: url("fonts/Pretendard-Thin.woff") format("woff"),
-    url("fonts/Pretendard-Thin.woff2") format("woff2");
+  src: url("fonts/Pretendard-Thin.woff") format("woff"), url("fonts/Pretendard-Thin.woff2") format("woff2");
   font-weight: 100;
   font-display: swap;
 }
@@ -379,8 +364,7 @@ header.on .gnb-wrap {
   justify-content: center;
   padding: 0;
   width: var(--btn-size);
-  transition: calc(var(--animation-duration) / 2) transform
-    var(--animation-timing-function);
+  transition: calc(var(--animation-duration) / 2) transform var(--animation-timing-function);
   /* Bars */
   /* State: X */
   /* State: Hamburger */
@@ -395,25 +379,25 @@ header.on .gnb-wrap {
   height: var(--bar-height);
   width: 100%;
 }
-#menu-btn[data-state="x"] {
+#menu-btn[data-state=x] {
   transform: rotate(-90deg);
 }
-#menu-btn[data-state="x"] span:nth-child(1) {
+#menu-btn[data-state=x] span:nth-child(1) {
   animation-name: to-x-top;
 }
-#menu-btn[data-state="x"] span:nth-child(2) {
+#menu-btn[data-state=x] span:nth-child(2) {
   animation-name: to-x-mid;
 }
-#menu-btn[data-state="x"] span:nth-child(3) {
+#menu-btn[data-state=x] span:nth-child(3) {
   animation-name: to-x-btm;
 }
-#menu-btn[data-state="hamburger"] span:nth-child(1) {
+#menu-btn[data-state=hamburger] span:nth-child(1) {
   animation-name: to-hamburger-top;
 }
-#menu-btn[data-state="hamburger"] span:nth-child(2) {
+#menu-btn[data-state=hamburger] span:nth-child(2) {
   animation-name: to-hamburger-mid;
 }
-#menu-btn[data-state="hamburger"] span:nth-child(3) {
+#menu-btn[data-state=hamburger] span:nth-child(3) {
   animation-name: to-hamburger-btm;
 }
 
@@ -424,12 +408,10 @@ header.on .gnb-wrap {
     transform: translateY(0) rotate(0);
   }
   50% {
-    transform: translateY(calc(var(--bar-height) + var(--bar-spacing)))
-      rotate(0);
+    transform: translateY(calc(var(--bar-height) + var(--bar-spacing))) rotate(0);
   }
   100% {
-    transform: translateY(calc(var(--bar-height) + var(--bar-spacing)))
-      rotate(-45deg);
+    transform: translateY(calc(var(--bar-height) + var(--bar-spacing))) rotate(-45deg);
   }
 }
 @keyframes to-x-mid {
@@ -445,23 +427,19 @@ header.on .gnb-wrap {
     transform: translateY(0) rotate(0);
   }
   50% {
-    transform: translateY(calc(-1 * (var(--bar-height) + var(--bar-spacing))))
-      rotate(0);
+    transform: translateY(calc(-1 * (var(--bar-height) + var(--bar-spacing)))) rotate(0);
   }
   100% {
-    transform: translateY(calc(-1 * (var(--bar-height) + var(--bar-spacing))))
-      rotate(-135deg);
+    transform: translateY(calc(-1 * (var(--bar-height) + var(--bar-spacing)))) rotate(-135deg);
   }
 }
 /* To Hamburger Animation */
 @keyframes to-hamburger-top {
   0% {
-    transform: translateY(calc(var(--bar-height) + var(--bar-spacing)))
-      rotate(-45deg);
+    transform: translateY(calc(var(--bar-height) + var(--bar-spacing))) rotate(-45deg);
   }
   50% {
-    transform: translateY(calc(var(--bar-height) + var(--bar-spacing)))
-      rotate(0);
+    transform: translateY(calc(var(--bar-height) + var(--bar-spacing))) rotate(0);
   }
   100% {
     transform: translateY(0) rotate(0);
@@ -477,12 +455,10 @@ header.on .gnb-wrap {
 }
 @keyframes to-hamburger-btm {
   0% {
-    transform: translateY(calc(-1 * (var(--bar-height) + var(--bar-spacing))))
-      rotate(-135deg);
+    transform: translateY(calc(-1 * (var(--bar-height) + var(--bar-spacing)))) rotate(-135deg);
   }
   50% {
-    transform: translateY(calc(-1 * (var(--bar-height) + var(--bar-spacing))))
-      rotate(0);
+    transform: translateY(calc(-1 * (var(--bar-height) + var(--bar-spacing)))) rotate(0);
   }
   100% {
     transform: translateY(0) rotate(0);
@@ -491,7 +467,7 @@ header.on .gnb-wrap {
 footer img {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .section1 {
@@ -718,7 +694,7 @@ footer img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 .section03-swiper-stop.on img {
   content: url(../../assets/images/section03-swiper-start.png);
@@ -753,9 +729,7 @@ footer img {
 .section4 {
   overflow: hidden;
   position: relative;
-}
-.section4 .container {
-  height: 100vh;
+  padding-bottom: 300px;
 }
 .section4 .sec4__btn {
   margin-left: auto;
@@ -790,14 +764,14 @@ footer img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .section4 .swiper-slide:hover .img-box {
   border: 7px solid #3290ff;
 }
 .section4 svg {
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   width: 100%;
 }
 .section4 textPath {
@@ -817,13 +791,13 @@ footer img {
 
 .sec4Swiper__bg {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 1031px;
+  height: 100%;
   background-image: url(../../assets/images/bg-section4.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .sec4Swiper .swiper-wrapper {
@@ -886,7 +860,7 @@ footer img {
 .section5 .bg-wrap {
   width: 100%;
   height: 416px;
-  background-image: url(../../assetsages/bg-section5.jpg);
+  background-image: url(../../assets/images/bg-section5.jpg);
   background-repeat: no-repeat;
   position: absolute;
   bottom: 0;
@@ -985,15 +959,11 @@ footer img {
   white-space: nowrap;
   background: #097cd3;
   border-radius: 100px;
-  transition: transform 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86),
-    -webkit-clip-path 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  transition: clip-path 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86),
-    transform 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  transition: clip-path 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86),
-    transform 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86),
-    -webkit-clip-path 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-clip-path 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: clip-path 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86), transform 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: clip-path 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86), transform 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-clip-path 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -webkit-clip-path: inset(8px 8px 8px calc(100% - 44px) round 36px);
-  clip-path: inset(8px 8px 8px calc(100% - 44px) round 36px);
+          clip-path: inset(8px 8px 8px calc(100% - 44px) round 36px);
 }
 
 .button-expand .circle svg {
@@ -1030,7 +1000,7 @@ footer img {
 @media (hover: hover) and (pointer: fine) {
   .button-expand:hover .circle {
     -webkit-clip-path: inset(0 round 50px);
-    clip-path: inset(0 round 50px);
+            clip-path: inset(0 round 50px);
   }
   .button-expand:hover .circle path:first-child {
     transform: translateX(100%);
@@ -1042,7 +1012,7 @@ footer img {
   }
   .button-more-expand:hover .icon {
     -webkit-clip-path: circle(150% at calc(100% - 26px) 50%);
-    clip-path: circle(150% at calc(100% - 26px) 50%);
+            clip-path: circle(150% at calc(100% - 26px) 50%);
   }
 }
 .section6 .container {
@@ -1111,7 +1081,7 @@ footer img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #fff url(../../assetsages/arr_upright.svg) center no-repeat;
+  background: #fff url(../../assets/images/arr_upright.svg) center no-repeat;
   position: absolute;
   right: 40px;
   top: 32px;
@@ -1245,4 +1215,4 @@ h3.title + .sub-title {
   font-size: 20px;
   font-weight: 300;
   text-align: center;
-} /*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
