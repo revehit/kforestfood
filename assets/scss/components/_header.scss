@@ -7,15 +7,13 @@ header {
   &.on {
     background-color: var(--color-white);
     border-bottom: 1px solid #ddd;
-    // .menu-btn {
-    //   span {
-    //     background: var(--color-white) !important;
-    //   }
-    // }
+
     .gnb-wrap {
-      //transform: translateX(-50%);
       opacity: 1;
     }
+  }
+  &.active {
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
 .header-inner {

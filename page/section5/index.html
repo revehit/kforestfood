@@ -9,13 +9,14 @@
   // 스크롤 트리거 애니메이션
   gsap.to("#section5 .bg-wrap", {
     scrollTrigger: {
-      trigger: "#section5 .bg-wrap",
-      start: "top center",
+      trigger: "#section5",
+      start: "top top",
       end: "bottom top",
       scrub: 1,
+      //pin: true,
     },
-    width: "90%",
-    borderRadius: "50px",
+    width: "1400px",
+    borderRadius: "100px",
     stagger: 0.1,
     duration: 1,
   });

@@ -77,7 +77,6 @@
     </div>
   </div>
 </div>
-<img class="link-wrap" src="assets/images/img-linkwrap.png" alt="" />
 
 <script>
   const serviceItem = document.getElementsByClassName("service-items");
@@ -89,7 +88,8 @@
       start: "top top",
       pin: true,
     },
-    xPercent: -100 * (serviceItem.length + 1),
+    //xPercent: -100 * (serviceItem.length + 1),
+    xPercent: -100 * serviceItem.length,
     ease: "none",
   });
 </script>

@@ -74,4 +74,21 @@
   }
   let menu_btn = document.getElementById("menu-btn");
   menu_btn.onclick = toggleMenuBtn;
+
+  $(window).on("scroll", function () {
+    // #section3의 위치와 높이 가져오기
+    var sectionTop = $("#section3").offset().top;
+    var sectionHeight = $("#section3").outerHeight();
+
+    // 현재 스크롤 위치와 창의 높이 계산
+    var scrollTop = $(window).scrollTop();
+    var windowHeight = $(window).height();
+
+    // 화면에 #section3가 보이는지 확인
+    if (scrollTop + windowHeight > sectionTop) {
+      $("#header").addClass("active");
+    } else {
+      $("#header").removeClass("active");
+    }
+  });
 </script>
