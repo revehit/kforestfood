@@ -1,4 +1,8 @@
 <script>
+  // document.addEventListener("DOMContentLoaded", function () {
+  AOS.init();
+  // });
+
   const se5Bg = document.getElementsByClassName("bg-wrap");
 
   gsap.set(se5Bg, {
@@ -23,7 +27,7 @@
 </script>
 
 <div class="container fluid">
-  <div>
+  <div data-aos="fade-up" data-aos-duration="1000">
     <h3 class="title">참여안내</h3>
     <p class="sub-title">
       청정한 숲푸드를 만들고자 함께 하는 업체를 소개합니다.

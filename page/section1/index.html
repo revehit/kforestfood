@@ -25,135 +25,133 @@
 <script>
   gsap.registerPlugin(ScrollTrigger);
 
-  $(document).ready(function () {
-    // 초기 랜덤 위치 설정
-    const Img1 = document.getElementsByClassName("img1");
-    const Img2 = document.getElementsByClassName("img2");
-    const Img3 = document.getElementsByClassName("img3");
-    const Img4 = document.getElementsByClassName("img4");
-    const Img5 = document.getElementsByClassName("img5");
-    const Img6 = document.getElementsByClassName("img6");
-    const Img7 = document.getElementsByClassName("img7");
-    const Img8 = document.getElementsByClassName("img8");
-    const Img9 = document.getElementsByClassName("img9");
-    const ImgTxt1 = document.getElementsByClassName("imgtxt1");
-    const ImgTxt2 = document.getElementsByClassName("imgtxt2");
-    const Section1 = document.getElementsByClassName("section1");
+  // 초기 랜덤 위치 설정
+  const Img1 = document.getElementsByClassName("img1");
+  const Img2 = document.getElementsByClassName("img2");
+  const Img3 = document.getElementsByClassName("img3");
+  const Img4 = document.getElementsByClassName("img4");
+  const Img5 = document.getElementsByClassName("img5");
+  const Img6 = document.getElementsByClassName("img6");
+  const Img7 = document.getElementsByClassName("img7");
+  const Img8 = document.getElementsByClassName("img8");
+  const Img9 = document.getElementsByClassName("img9");
+  const ImgTxt1 = document.getElementsByClassName("imgtxt1");
+  const ImgTxt2 = document.getElementsByClassName("imgtxt2");
+  const Section1 = document.getElementsByClassName("section1");
 
-    gsap.set(Img1, {
-      x: -250,
-      y: -1350,
-      rotation: -60,
-    });
-    gsap.set(Img2, {
-      x: -10,
-      y: -500,
-      scale: 2,
-      rotation: 45,
-    });
-    gsap.set(Img3, {
-      x: 200,
-      y: -600,
-      scale: 1.5,
-      rotation: -45,
-    });
-    gsap.set(Img4, {
-      x: -350,
-      y: -300,
-      scale: 1.5,
-      rotation: -45,
-    });
-    gsap.set(Img5, {
-      y: -150,
-      scale: 2.5,
-      rotation: 90,
-    });
-    gsap.set(Img6, {
-      x: 200,
-      y: -300,
-      rotation: 180,
-    });
-    gsap.set(Img7, {
-      x: -50,
-      y: -150,
-      rotation: 90,
-    });
-    gsap.set(Img8, {
-      x: 50,
-      y: -50,
-      scale: 1.3,
-    });
-    gsap.set(Img9, {
-      x: 50,
-      y: -200,
-    });
-    gsap.set(ImgTxt1, {
-      opacity: 1,
-      //y: -500,
-      y: -200,
-    });
-    gsap.set(ImgTxt2, {
-      opacity: 0,
-      //y: 100,
-    });
-    gsap.set(Section1, {
-      opacity: 1,
-    });
+  gsap.set(Img1, {
+    x: -500,
+    y: -1350,
+    rotation: -60,
+  });
+  gsap.set(Img2, {
+    x: -10,
+    y: -500,
+    scale: 2,
+    rotation: 45,
+  });
+  gsap.set(Img3, {
+    x: 200,
+    y: -600,
+    scale: 1.5,
+    rotation: -45,
+  });
+  gsap.set(Img4, {
+    x: -350,
+    y: -300,
+    scale: 1.5,
+    rotation: -45,
+  });
+  gsap.set(Img5, {
+    y: -150,
+    scale: 2.5,
+    rotation: 90,
+  });
+  gsap.set(Img6, {
+    x: 200,
+    y: -300,
+    rotation: 180,
+  });
+  gsap.set(Img7, {
+    x: -50,
+    y: -150,
+    rotation: 90,
+  });
+  gsap.set(Img8, {
+    x: 50,
+    y: -50,
+    scale: 1.3,
+  });
+  gsap.set(Img9, {
+    x: 50,
+    y: -200,
+  });
+  gsap.set(ImgTxt1, {
+    opacity: 1,
+    //y: -500,
+    y: -200,
+  });
+  gsap.set(ImgTxt2, {
+    opacity: 0,
+    //y: 100,
+  });
+  gsap.set(Section1, {
+    opacity: 1,
+  });
 
-    // 스크롤 트리거 애니메이션
-    gsap.to(".imgbox img", {
-      scrollTrigger: {
-        trigger: "#section1 .visual",
-        start: "top center",
-        end: "bottom top",
-        scrub: 1,
-        pin: true,
-      },
-      opacity: 1,
-      x: 50,
-      y: -250,
-      scale: 1,
-      rotation: 0,
-      stagger: 0.1,
-      duration: 1,
-    });
+  // 스크롤 트리거 애니메이션
+  gsap.to(".imgbox img", {
+    scrollTrigger: {
+      trigger: "#section1 .visual",
+      start: "top center",
+      end: "bottom top",
+      scrub: 1,
+      pin: true,
+    },
+    opacity: 1,
+    x: 50,
+    y: -250,
+    scale: 1,
+    rotation: 0,
+    stagger: 0.1,
+    duration: 1,
+  });
 
-    gsap.to(ImgTxt1, {
-      scrollTrigger: {
-        trigger: "#section1 .container",
-        start: "top",
-        end: "top center",
-        scrub: 2,
-      },
-      opacity: 0,
-      y: -800,
-      stagger: 0.1,
-      duration: 1,
-    });
+  gsap.to(ImgTxt1, {
+    scrollTrigger: {
+      trigger: "#section1 .container",
+      start: "top",
+      end: "top center",
+      scrub: 2,
+    },
+    opacity: 0,
+    y: -800,
+    stagger: 0.1,
+    duration: 1,
+  });
 
-    gsap.to(ImgTxt2, {
-      scrollTrigger: {
-        trigger: "#section1",
-        start: "top",
-        end: "center bottom",
-        scrub: 2,
-      },
-      opacity: 1,
-      y: -350,
-      stagger: 0.1,
-      duration: 1,
-    });
+  gsap.to(ImgTxt2, {
+    scrollTrigger: {
+      trigger: "#section1",
+      start: "top",
+      end: "center bottom",
+      scrub: 2,
+    },
+    opacity: 1,
+    y: -350,
+    stagger: 0.1,
+    duration: 1,
+  });
 
-    gsap.to(Section1, {
-      scrollTrigger: {
-        trigger: "#section2",
-        start: "top center",
-        end: "top bottom",
-        scrub: 5,
-      },
-      opacity: 0,
-      stagger: 0.1,
-      duration: 1,
-    });
+  gsap.to(Section1, {
+    scrollTrigger: {
+      trigger: "#section2",
+      start: "top center",
+      end: "top bottom",
+      scrub: 5,
+    },
+    opacity: 0,
+    stagger: 0.1,
+    duration: 1,
   });
 </script>

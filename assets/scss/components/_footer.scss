@@ -1,6 +1,54 @@
 footer {
-  img {
-    width: 100%;
-    object-fit: cover;
+  background-color: var(--color-black);
+  display: flex;
+  position: relative;
+  padding-top: 15px;
+  &::before,
+  &::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    position: absolute;
+  }
+  &::before {
+    top: -15px;
+    left: 0;
+  }
+  &::after {
+    top: -15px;
+    right: 0;
+  }
+  .bg-line {
+    width: calc(100% - 30px);
+    height: 15px;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 82px 0;
+    position: relative;
+    address {
+      color: var(--color-white);
+      font-style: normal;
+      font-size: 20px;
+      margin-left: 115px;
+      p + p {
+        padding-top: 10px;
+      }
+    }
+  }
+  .sns-box {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 }

@@ -17,7 +17,7 @@
   }
   .swiper-slide {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 400px;
 
     .text {
@@ -27,15 +27,27 @@
     }
     .img-box {
       width: 400px;
-      //height: 250px;
       height: 200px;
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      //border: 7px solid transparent;
       border-radius: 20px;
       box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 7px solid #3290ff;
+        border-radius: 20px;
+        opacity: 0;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -44,7 +56,9 @@
     }
     &:hover {
       .img-box {
-        border: 7px solid #3290ff;
+        &::after {
+          opacity: 1;
+        }
       }
     }
   }
@@ -52,14 +66,12 @@
   svg {
     position: absolute;
     bottom: -10%;
-    //border: 1px solid #111;
     width: 100%;
   }
   textPath {
     font-size: 80px;
     font-family: althelas;
     font-weight: bold;
-    //fill: #388049;
     fill: #fff;
   }
 }
@@ -67,7 +79,6 @@
 .sec4Swiper {
   display: flex;
   position: relative;
-  //height: 480px;
   height: 360px;
   margin-top: 40px;
   padding-left: 170px;
@@ -78,7 +89,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  //background-color: #fff7e2;
   background-image: url(../../assets/images/bg-section4.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;

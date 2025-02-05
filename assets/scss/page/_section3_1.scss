@@ -1,6 +1,7 @@
 .section3 {
   padding-bottom: 160px;
-  overflow: hidden;
+  //overflow: hidden;
+  overflow: visible !important;
   position: relative;
   .container {
     //height: 100vh;

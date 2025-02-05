@@ -20,7 +20,7 @@ header.on .gnb-wrap {
   display: flex;
   align-items: center;
   margin-left: auto;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 .header-inner nav ul {
   display: flex;
@@ -161,8 +161,55 @@ header.on .gnb-wrap {
     transform: translateY(0) rotate(0);
   }
 }
-footer img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+footer {
+  background-color: var(--color-black);
+  display: flex;
+  position: relative;
+  padding-top: 15px;
+}
+footer::before, footer::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  position: absolute;
+}
+footer::before {
+  top: -15px;
+  left: 0;
+}
+footer::after {
+  top: -15px;
+  right: 0;
+}
+footer .bg-line {
+  width: calc(100% - 30px);
+  height: 15px;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  padding: 82px 0;
+  position: relative;
+}
+footer .container address {
+  color: var(--color-white);
+  font-style: normal;
+  font-size: 20px;
+  margin-left: 115px;
+}
+footer .container address p + p {
+  padding-top: 10px;
+}
+footer .sns-box {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }/*# sourceMappingURL=components.css.map */

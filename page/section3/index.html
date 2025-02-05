@@ -116,9 +116,9 @@
 </div>
 
 <script>
-  AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+  AOS.init(); // AOS 초기화
 
-  // swiper
+  // Swiper 설정
   $(function () {
     var section03_swiper = new Swiper(".section03-swiper", {
       slidesPerView: "auto",
@@ -138,22 +138,15 @@
         disableOnInteraction: false,
       },
       on: {
+        init: function () {
+          AOS.refresh(); // Swiper 초기화 후 AOS 갱신
+        },
         slideChange: function () {
-          setTimeout(() => {
-            var classname = $(
-              ".section03-swiper .swiper-slide-next > span"
-            ).attr("class");
-
-            if (classname) {
-              $(".section03-swiper02 li").removeClass("on");
-              $(".section03-swiper02")
-                .find("." + classname.trim())
-                .addClass("on");
-            }
-          }, 100);
+          AOS.refresh(); // 슬라이드 변경 시 AOS 갱신
         },
       },
     });
+
     var sw = 0;
     $(".section03-swiper-stop").click(function () {
       if (sw == 0) {
@@ -166,7 +159,43 @@
         sw = 0;
       }
     });
+  });
+</script>
+<script>
+  // GSAP 및 ScrollTrigger 플러그인 초기화
+  gsap.registerPlugin(ScrollTrigger);
 
-    //section03_swiper.controller.control = section03_swiper_pagination;
+  // 각 이미지에 대한 스크롤 애니메이션 설정
+  gsap.from(".img-section3-1", {
+    y: -600, // 시작 위치
+    opacity: 0,
+    scrollTrigger: {
+      trigger: "#section3",
+      start: "top bottom", // 트리거 요소가 뷰포트 상단에 도달했을 때 시작
+      end: "top center", // 트리거 요소가 뷰포트 중앙에 도달했을 때 종료
+      scrub: 1,
+    },
+  });
+
+  gsap.from(".img-section3-2", {
+    y: -600,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: "#section3",
+      start: "top bottom",
+      end: "top center",
+      scrub: 1,
+    },
+  });
+
+  gsap.from(".img-section3-3", {
+    y: -600,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: "#section3",
+      start: "top bottom",
+      end: "top center",
+      scrub: 1,
+    },
   });
 </script>

@@ -1,5 +1,5 @@
 <div class="container">
-  <div>
+  <div data-aos="fade-up" data-aos-duration="1000">
     <h3 class="title">소식안내</h3>
     <p class="sub-title">청정한 숲푸드를 만들고자 함께하는 업체를 소개합니다</p>
     <a href="javascript:;" class="link-btn">View all</a>
@@ -7,78 +7,102 @@
 
   <div class="service-conts-wrap service-items">
     <div class="conts-box ty-1 service-items-box">
-      <div class="head">
-        <span>공지사항</span>
-        <b>
-          K-FOREST FOOD <br />
-          WEEK SNS 공유 이벤트
-        </b>
-      </div>
-      <div class="img-box">
-        <img src="assets/images/img-section6-1.png" />
-      </div>
-      <a href=""></a>
+      <a href="#">
+        <div class="img-box">
+          <img src="assets/images/img-section6-1.png" />
+        </div>
+        <div class="head">
+          <span class="badge notice">공지사항</span>
+          <b> K-FOREST FOOD WEEK SNS 공유 이벤트 </b>
+        </div>
+      </a>
     </div>
     <div class="conts-box ty-2 service-items-box">
-      <div class="head">
-        <span>교욱/행사</span>
-        <b>설 맞이 청정임산물 <br />‘숲푸드 기획전’ 개최</b>
-      </div>
-      <div class="img-box">
-        <img src="assets/images/img-section6-3.png" />
-      </div>
-      <a href=""></a>
+      <a href="#">
+        <div class="img-box">
+          <img src="assets/images/img-section6-3.png" />
+        </div>
+        <div class="head">
+          <span class="badge event">교욱/행사</span>
+          <b>설 맞이 청정임산물 ‘숲푸드 기획전’ 개최</b>
+        </div>
+      </a>
     </div>
     <div class="conts-box ty-3 service-items-box">
-      <div class="head">
-        <span>알림/홍보</span>
-
-        <b>올 여름 건강을 책임질<br />보양 임산물은?</b>
-      </div>
-      <div class="img-box">
-        <img src="assets/images/img-section6-2.png" />
-      </div>
-      <a href=""></a>
+      <a href="#">
+        <div class="img-box">
+          <img src="assets/images/img-section6-2.png" />
+        </div>
+        <div class="head">
+          <span class="badge promotion">알림/홍보</span>
+          <b>올 여름 건강을 책임질 보양 임산물은?</b>
+        </div>
+      </a>
     </div>
 
     <div class="conts-box ty-1 service-items-box">
-      <div class="head">
-        <span>공지사항</span>
-        <b>
-          K-FOREST FOOD <br />
-          WEEK SNS 공유 이벤트
-        </b>
-      </div>
-      <div class="img-box">
-        <img src="assets/images/img-section6-1.png" />
-      </div>
-      <a href=""></a>
+      <a href="#">
+        <div class="img-box">
+          <img src="assets/images/img-section6-1.png" />
+        </div>
+        <div class="head">
+          <span class="badge notice">공지사항</span>
+          <b> K-FOREST FOOD WEEK SNS 공유 이벤트 </b>
+        </div>
+      </a>
     </div>
     <div class="conts-box ty-2 service-items-box">
-      <div class="head">
-        <span>교욱/행사</span>
-        <b>설 맞이 청정임산물 <br />‘숲푸드 기획전’ 개최</b>
-      </div>
-      <div class="img-box">
-        <img src="assets/images/img-section6-3.png" />
-      </div>
-      <a href=""></a>
+      <a href="#">
+        <div class="img-box">
+          <img src="assets/images/img-section6-3.png" />
+        </div>
+        <div class="head">
+          <span class="badge event">교욱/행사</span>
+          <b>설 맞이 청정임산물 ‘숲푸드 기획전’ 개최</b>
+        </div>
+      </a>
     </div>
     <div class="conts-box ty-3 service-items-box">
-      <div class="head">
-        <span>알림/홍보</span>
-
-        <b>올 여름 건강을 책임질<br />보양 임산물은?</b>
-      </div>
-      <div class="img-box">
-        <img src="assets/images/img-section6-2.png" />
-      </div>
-      <a href=""></a>
+      <a href="#">
+        <div class="img-box">
+          <img src="assets/images/img-section6-2.png" />
+        </div>
+        <div class="head">
+          <span class="badge promotion">알림/홍보</span>
+          <b>올 여름 건강을 책임질 보양 임산물은?</b>
+        </div>
+      </a>
     </div>
   </div>
 </div>
 
 <script>
+  $(window).on("scroll", function () {
+    // #section6의 위치와 높이 가져오기
+    var section6Top = $("#section6").offset().top;
+    var section6Height = $("#section6").outerHeight();
+
+    // 현재 스크롤 위치와 창의 높이 계산
+    var scroll6Top = $(window).scrollTop();
+    var windowHeight = $(window).height();
+
+    // 화면에 #section6가 보이는지 확인
+    //if (scroll2Top + windowHeight > section2Top) {
+    // top
+    if (scroll6Top + windowHeight > section6Top + section6Height / 2) {
+      // helf
+      //if (scroll2Top + windowHeight > section2Top + section2Height) {
+      //end
+      $("#section6").addClass("active");
+    } else {
+      $("#section6").removeClass("active");
+    }
+  });
+</script>
+
+<script>
+  AOS.init();
+
   const serviceItem = document.getElementsByClassName("service-items");
 
   gsap.to(serviceItem, {
